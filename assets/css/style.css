@@ -1,0 +1,917 @@
+:root {
+    /* Colors of the page */
+    --Primary-black: 46, 49, 52;
+    --Secondary-black: 49, 49, 49;
+    --White: 255, 253, 250;
+    --Yellow: 244, 187, 58;
+
+    /* Font of the page */
+    --Font-poppins: 'Poppins', sans-serif;
+
+    /* Size of elements */
+    --Navbar-height: 40px;
+}
+
+/* Removing all the padding and margin of the elements */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: rgb(var(--White));
+    font-family: var(--Font-poppins);
+    overflow-x: hidden;
+}
+
+/* It makes the scrollbar 0 pixels wide, making it disappear */
+::-webkit-scrollbar {
+    width: 0;
+}
+
+.container {
+    padding: 0 5%;
+    height: 100vh;
+    min-height: 600px;
+    width: 100vw;
+}
+
+.h2-title {
+    font-size: 3.75rem;
+    font-weight: 600;
+    text-align: center;
+    line-height: 1.2;
+}
+
+.h2-title.h2-black {
+    color: rgb(var(--Primary-black));
+}
+
+.h2-title.h2-white {
+    color: rgb(var(--White));
+}
+
+.h1-home>span,
+.h2-title>span {
+    color: rgb(var(--Yellow));
+}
+
+.h3-title {
+    color: rgb(var(--Primary-black));
+    font-size: 35px;
+}
+
+.p-paragraphy {
+    color: rgb(var(--Secondary-black));
+    font-size: 0.9rem;
+    font-weight: 400;
+}
+
+/* Home section styles */
+
+#home {
+    background-image: url(../img/home/home_background.png);
+    background-position: right;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-top: var(--Navbar-height);
+    position: relative;
+}
+
+#home::before {
+    position: absolute;
+    content: '';
+    bottom: -100px;
+    left: -250px;
+    height: 300px;
+    width: 300px;
+    border-radius: 50%;
+    background-color: rgb(var(--Yellow));
+}
+
+#nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(var(--White));
+    height: var(--Navbar-height);
+    padding: 0 5%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.logo {
+    width: 100px;
+}
+
+.nav-list {
+    display: flex;
+    gap: 100px;
+    list-style: none;
+}
+
+.nav-item>a {
+    color: rgb(var(--Primary-black));
+    display: table;
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: color 500ms;
+}
+
+.nav-item>a:hover {
+    color: rgb(var(--Yellow));
+}
+
+.home-text-grid {
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 100%;
+    align-items: center;
+}
+
+.home-text-container {
+    margin-top: -8%;
+}
+
+.h1-home {
+    color: rgb(var(--Primary-black));
+    font-size: 4.3rem;
+    line-height: 1.2;
+    font-weight: 600;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.p-home {
+    color: rgb(var(--Secondary-black));
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.home-img {
+    display: none;
+}
+
+/* About us section styles */
+#about {
+    background-color: rgb(var(--Yellow));
+    height: 100%;
+    padding: 80px 13%;
+}
+
+#about>.h2-title {
+    margin-bottom: 80px;
+}
+
+.about-grid {
+    display: grid;
+    row-gap: 40px;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: auto;
+    justify-content: space-around;
+}
+
+.about-card {
+    background-color: rgb(var(--White));
+    border-radius: 25px;
+    margin: 0 auto;
+    padding: 4.5% 2.5% 9%;
+    width: 400px;
+}
+
+.about-img {
+    border-radius: 25px;
+    margin-bottom: 10px;
+    object-fit: cover;
+    height: 220px;
+    width: 100%;
+}
+
+#about>.h3-title {
+    margin-bottom: 5px;
+}
+
+/* Projects section styles */
+#projects {
+    height: 100%;
+    padding: 80px 5%;
+}
+
+#projects>h2 {
+    margin-bottom: 80px;
+}
+
+.projects-flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.projects-card {
+    border-radius: 25px;
+    overflow: hidden;
+    height: 200px;
+    width: 300px;
+}
+
+.project-img {
+    border-radius: 25px;
+    height: 100%;
+    object-fit: cover;
+    transition: 0.5s;
+    width: 100%;
+}
+
+.projects-card:hover .project-img {
+    scale: 1.1;
+}
+
+#contact {
+    background-image: url(../img/contact/contact_background.png);
+    background-position: center;
+    background-size: cover;
+    padding: 80px 8%;
+}
+
+.h2-contact>span {
+    color: rgb(var(--Primary-black));
+}
+
+.contact-card {
+    background-color: rgb(var(--White));
+    border-radius: 50px;
+    text-align: center;
+    padding: 70px 3% 50px;
+}
+
+.contact-card>.h2-title {
+    margin-bottom: 40px;
+}
+
+.contact-card>.p-paragraphy {
+    margin-bottom: 60px;
+}
+
+.contact-btn {
+    background-color: rgb(var(--Yellow));
+    border-radius: 50px;
+    color: rgb(var(--White));
+    font: 16px;
+    padding: 13px 50px;
+    text-decoration: none;
+    transition: 0.5s;
+}
+
+.contact-btn:hover {
+    background-color: rgba(var(--Yellow), 0.65);
+    color: rgb(var(--Secondary-black));
+}
+
+/* Footer section */
+#footer {
+    background-color: rgb(var(--Yellow));
+    border-top: 2px solid rgb(var(--White));
+    padding: 40px 3%;
+    width: 100vw;
+    font-size: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.p-footer {
+    color: rgb(var(--White));
+}
+
+.footer-list {
+    list-style: none;
+    display: flex;
+    gap: 40px;
+}
+
+.footer-item>a {
+    display: table;
+    color: rgb(var(--White));
+    text-decoration: none;
+    transition: color 500ms;
+}
+
+.footer-item>a:hover {
+    color: rgb(var(--Secondary-black));
+}
+
+
+/* These two are just to get the footer adjusted on really small screens */
+@media (width <= 280px) {
+    #footer {
+        font-size: 10px !important;
+    }
+}
+
+@media (width <= 375px) {
+    .footer-list {
+        gap: 8px;
+    }
+}
+
+/* Smartphones with less than 350px wide */    
+@media (width <= 350px) {
+    .h2-title {
+        font-size: 2.2rem;
+    }
+
+    .h1-home {
+        font-size: 3rem;
+        margin-bottom: 25px;
+    }
+
+    .p-home {
+        font-size: .9rem;
+    }
+
+    #about,
+    #projects,
+    #contact {
+        padding: 40px 5%;
+    }
+
+    #about>.h2-title,
+    #projects>.h2-title {
+        margin-bottom: 40px;
+    }
+
+    .about-card>.h3-title {
+        font-size: 25px;
+    }
+
+    .about-card>.p-paragraphy {
+        font-size: .85rem;
+    }
+
+    .about-img {
+        height: 180px;
+    }
+
+    .h2-contact {
+        font-size: 1.7rem;
+    }
+
+    .p-contact,
+    .contact-btn {
+        font-size: .8rem;
+    }
+    #footer {
+        font-size: 13px !important;
+    }
+}
+
+/* Smartphones between 350px and 400px wide */
+@media (350px < width <= 400px) {    
+    .h2-title {
+        font-size: 2.5rem;
+    }
+
+    .h1-home {
+        font-size: 3.75rem;
+    }
+
+    #about,
+    #projects,
+    #contact {
+        padding: 60px 5%;
+    }
+
+    #about>.h2-title,
+    #projects>.h2-title {
+        margin-bottom: 60px;
+    }
+
+    .about-card>.h3-title {
+        font-size: 30px;
+    }
+
+    .about-card>.p-paragraphy {
+        font-size: .9rem;
+    }
+
+    .about-img {
+        height: 200px;
+    } 
+
+    .projects-card {
+        height: 225px;
+    }
+
+}
+
+/* Smartphones under 400px wide */
+@media (width <= 400px) {
+    .about-card,
+    .projects-card {
+        width: 100%;
+    }
+}
+
+/* Smartphones between 400px and 450px wide */
+@media (400px < width <= 450px) {    
+    .h2-title {
+        font-size: 3rem;
+    }
+
+    .h1-home {
+        font-size: 4rem;
+    }
+
+    .about-card {
+        width: 350px;
+    }
+
+    #about,
+    #projects {
+        padding: 80px 3%;
+    }
+
+    .projects-card {
+        height: 235px;
+        width: 350px;
+    }
+
+    #contact {
+        padding: 30px 3% 60px;
+    }
+
+    .h2-contact {
+        font-size: 2.5rem;
+    }
+}
+
+/* Smartphones between 450px and 500px wide */
+@media (450px < width <= 500px) {
+    .h2-title {
+        font-size: 3.2rem;
+    }
+
+    .h1-home {
+        font-size: 4.3rem;
+    }
+
+    #about,
+    #projects {
+        padding: 80px 8%;
+    }
+
+    .about-card {
+        width: 370px;
+    }
+
+    .projects-card {
+        height: 235px;
+        width: 370px;
+    }
+
+    .h2-contact {
+        font-size: 2.7rem;
+    }
+}
+
+/* Small tablets between 500px and 600px wide */
+@media (500px < width <= 600px) {
+    .h1-home {
+        font-size: 4.7rem;
+        margin-bottom: 30px;
+    }
+
+    .p-home {
+        font-size: 1.1rem;
+    }
+
+    #about {
+        padding: 80px 10%;
+    }
+
+    .projects-card {
+        height: 265px;
+        width: 400px;
+    }
+
+    .h2-contact {
+        font-size: 3.2rem;
+    }
+}
+
+/* Seting up the about and project cards to devices between 500px and 750px wide */
+@media (550px < width <= 700px) {
+    .about-card {
+        width: 420px;
+    }
+
+    .about-img {
+        height: 250px;
+    }
+
+    .projects-card {
+        height: 280px;
+        width: 420px;
+    }
+}
+
+/* Changing the footer to devices under 600px wide */
+@media (width <= 600px) {
+    #footer {
+        font-size: 15px;
+        display: block;
+    }
+
+    .p-footer {
+        margin-bottom: 20px;
+        text-align: center;
+    }
+
+    .footer-list {
+        justify-content: center;
+    }
+}
+
+/* Litlle changes in the home text*/
+@media (600px < width <= 650px) {
+    .home-text-container {
+        margin-top: 15%;
+    }
+
+    .h1-home {
+        font-size: 4rem;
+        margin-bottom: 30px;
+    }
+
+    .p-home {
+        font-size: 1.2rem;
+    }
+
+}
+
+/* Here it makes an image appear on tablets displays*/
+@media (600px < width <= 850px) and (orientation: portrait) { 
+    #home {
+        background-image: none;
+        height: 100%;
+        min-height: 100vh;
+        padding-bottom: 0;
+    }
+
+    #home::before {
+        bottom: 10%;
+    }
+
+    .home-text-grid {
+        grid-template-columns: 100%;
+    }
+
+    .home-text-container {
+        margin-top: 15%;
+    }
+
+    .p-home {
+        margin-bottom: 90px;
+    }
+
+    .home-img {
+        display: block;
+        margin-left: auto;
+        width: 70%;
+    }
+}
+
+/* In small laptops, the home background image won't appear */
+@media (600px < width <= 850px) and (orientation: landscape) {
+    #home {
+        background-image: none;
+    }
+}
+
+/* Navigation list disappear */
+@media (width <= 650px) {
+    .nav-list {
+        display: none;
+    }
+}
+
+/* Ajusting the size of the home text */
+@media (650px < width <= 700px) {
+    .h1-home {
+        font-size: 4.3rem;
+        margin-bottom: 30px;
+    }
+
+    .p-home {
+        font-size: 1.2rem;
+    }
+}
+
+/* Changing the gap of the list, as i do below*/
+@media (650px < width <= 760px) {
+    .nav-list {
+        gap: 30px;
+    }
+}
+
+/* Gap of the nav list */
+@media (760px < width <= 800px) {
+    .nav-list {
+        gap: 60px;
+    }
+}
+
+/* Here i make some big changes to devices under 700px wide */
+@media (width <= 700px) {      
+    #home {
+        background-image: none;
+        min-height: 700px;
+    }
+
+    #home::before {
+        bottom: -150px;
+    }
+    
+    .home-text-grid {
+        align-items: start;
+        grid-template-columns: 100%;
+    }
+
+    .home-text-container {
+        margin-top: 15%;
+    }
+
+    .about-grid {
+        grid-template-columns: 100%;
+        grid-template-rows: auto;
+    }
+}
+
+/* Changing the about section padding and the cards size */
+@media (700px < width <= 750px) {
+    #about {
+        padding: 80px 5%;
+    }
+
+    .about-card,
+    .projects-card {
+        width: 300px;
+    }
+
+    .about-img {
+        height: 190px;
+    }
+
+    .about-card>.h3-title {
+        font-size: 26px;
+    }
+
+    .about-card>.p-paragraphy {
+        font-size: .85rem;
+    }
+}
+
+/* Changing some text size */
+@media (700px < width <= 850px) {
+    .h1-home {
+        font-size: 4.7rem;
+    }
+
+    .h2-contact {
+        font-size: 3.5rem;
+    }
+}
+
+/* Making the about section responsible from 750px till 850px */
+@media (750px < width <= 850px) {
+    #about {
+        padding: 80px 5%;
+    }
+
+    .about-card {
+        width: 330px;
+    }
+
+    .about-card>.h3-title {
+        font-size: 30px;
+    }
+
+    .about-card>.p-paragraphy {
+        font-size: .9rem;
+    }
+
+    .projects-card {
+        height: 225px;
+        width: 325px;
+    }
+}
+
+/* If the homepage background image is below the text, this gradient will prevent the text from being unreadable */
+@media (850px < width < 1150px) {
+    .home-text-grid {
+        background-image: linear-gradient(to right, rgba(var(--White), 0.6), rgba(var(--White), 0.1));
+    }
+}
+
+/* Laptops between 850px and 935px wide */
+@media (850px < width < 935px) {
+    .h1-home {
+        font-size: 3.4rem;
+    }
+
+    .p-home {
+        font-size: .9rem;
+    }
+
+    #about {
+        padding: 80px 8%;
+    }
+
+    .about-card {
+        width: 345px;
+    }
+
+    .projects-card {
+        height: 225px;
+        width: 345px;
+    }
+}
+
+/* Laptops between 935px and 1100px wide */
+@media (935px < width <= 1100px) {
+    .h1-home {
+        font-size: 3.7rem;
+    }
+
+    .p-home {
+        font-size: 1rem;
+    }
+
+    #about {
+        padding: 80px 8%;
+    }
+
+    .about-card {
+        width: 380px;
+    }
+
+    .projects-card {
+        height: 265px;
+        width: 380px;
+    }
+}
+
+/* From here to below, i'm gonna change the components and texts sizes to big screens */
+@media (1000px < width <= 1100px) {
+    .h1-home {
+        font-size: 4.1rem;
+    }
+}
+
+@media (1200px <= width) {
+    #about {
+        padding: 80px 15%;
+    }
+
+    .h2-contact>span {
+        display: block;
+    }
+}
+
+@media (1300px <= width) {    
+    .h2-title {
+        font-size: 4rem;
+    }
+
+    .h1-home {
+        font-size: 4.7rem;
+    }
+
+    .p-home {
+        font-size: 1.1rem;
+    }
+
+    .p-paragraphy {
+        font-size: 1rem;
+    }
+
+    .about-card {
+        width: 425px;
+    }
+
+    .about-img {
+        height: 235px;
+    }
+
+    .projects-card {
+        height: 225px;
+        width: 325px;
+    }
+
+    .p-contact {
+        font-size: 1.1rem;
+    }
+}
+
+@media (1400px <= width) {
+    :root {
+        --Navbar-height: 60px;
+    }
+    
+    .h2-title {
+        font-size: 4.3rem;
+    }
+
+    .h1-home {
+        font-size: 5rem;
+    }
+
+    .nav-item>a {
+        font-size: 1.1rem;
+    }
+}
+
+@media (1500px <= width) {       
+    .h2-title {
+        font-size: 4.5rem;
+    }
+
+    .h1-home {
+        font-size: 5.3rem;
+    }
+
+    .p-home {
+        font-size: 1.2rem;
+    }
+
+    .p-paragraphy {
+        font-size: 1.1rem;
+    }
+
+    .about-card {
+        width: 435px;
+    }
+
+    .projects-card {
+        height: 250px;
+        width: 350px;
+    }
+
+    .contact-card {
+        max-width: 1300px;
+        margin: 0 auto;
+    }
+
+    .p-contact {
+        font-size: 1.2rem;
+    }
+}
+
+@media (1600px <= width) {
+    .h2-title {
+        font-size: 4.6rem;
+    }
+
+    .h1-home {
+        font-size: 5.6rem;
+    }
+
+    .projects-card {
+        height: 275px;
+        width: 460px;
+    }
+}
+
+@media (1800px <= width) {
+    .h2-title {
+        font-size: 4.6rem;
+    }
+
+    .h3-title {
+        font-size: 35px;
+    }
+        .h1-home {
+        font-size: 5.9rem;
+    }
+
+    .about-card {
+        width: 450px;
+    }
+
+    .about-img {
+        height: 250px;
+    }
+
+    .projects-card {
+        height: 275px;
+        width: 460px;
+    }
+}
