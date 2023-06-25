@@ -776,7 +776,7 @@ body {
     }
 }
 
-@media (1200px <= width) {
+@media (1200px <= width) {   
     #about {
         padding: 80px 15%;
     }
@@ -830,12 +830,24 @@ body {
         font-size: 4.3rem;
     }
 
+    .p-paragraphy {
+        font-size: 1.1rem;
+    }
+
     .h1-home {
         font-size: 5rem;
     }
 
     .nav-item>a {
         font-size: 1.1rem;
+    }
+
+    .about-card {
+        padding: 5% 3% 9%;
+    }
+
+    #footer {
+        font-size: 14px;
     }
 }
 
@@ -857,7 +869,11 @@ body {
     }
 
     .about-card {
-        width: 435px;
+        width: 450px;
+    }
+
+    .about-img {
+        height: 250px;
     }
 
     .projects-card {
@@ -880,8 +896,24 @@ body {
         font-size: 4.6rem;
     }
 
+    .h3-title {
+        font-size: 40px;
+    }
+
+    .p-paragraphy {
+        font-size: 1.2rem;
+    }
+
     .h1-home {
         font-size: 5.6rem;
+    }
+
+    .about-card {
+        width: 465px;
+    }
+
+    .about-img {
+        height: 250px;
     }
 
     .projects-card {
@@ -896,19 +928,29 @@ body {
     }
 
     .h3-title {
-        font-size: 35px;
+        font-size: 45px;
     }
-        .h1-home {
-        font-size: 5.9rem;
+
+    .p-paragraphy {
+        font-size: 1.2rem;
+    }
+
+    .h1-home {
+        font-size: 5.5vw;
+    }
+
+    .p-home {
+        font-size: 1.2vw;
     }
 
     .about-card {
-        width: 450px;
+        width: 500px;
     }
 
     .about-img {
-        height: 250px;
+        height: 285px;
     }
+
 
     .projects-card {
         height: 275px;
