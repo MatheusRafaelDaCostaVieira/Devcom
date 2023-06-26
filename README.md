@@ -5,4 +5,5 @@ DevCom website project from the Udemy Web Development Bootcamp - Developent desc
 - The projects section has generic imagens because i don't want to to use photos of other website and get processed 😃.
 - If there's either a vocabulary or a gramatic mistake (maybe both), i'm sorry, english isn't my first language, but i'll kepp studing !.
 
-Hope you guys have enjoyed my little work, peace 🤘. 
+Hope you guys have enjoyed my little work, peace 🤘.
+
