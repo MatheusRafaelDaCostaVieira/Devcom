@@ -310,20 +310,20 @@ body {
 
 
 /* These two are just to get the footer adjusted on really small screens */
-@media (width <= 280px) {
+@media (width <=280px) {
     #footer {
         font-size: 10px !important;
     }
 }
 
-@media (width <= 375px) {
+@media (width <=375px) {
     .footer-list {
         gap: 8px;
     }
 }
 
-/* Smartphones with less than 350px wide */    
-@media (width <= 350px) {
+/* Smartphones with less than 350px wide */
+@media (width <=350px) {
     .h2-title {
         font-size: 2.2rem;
     }
@@ -368,13 +368,14 @@ body {
     .contact-btn {
         font-size: .8rem;
     }
+
     #footer {
         font-size: 13px !important;
     }
 }
 
 /* Smartphones between 350px and 400px wide */
-@media (350px < width <= 400px) {    
+@media (350px < width <=400px) {
     .h2-title {
         font-size: 2.5rem;
     }
@@ -404,7 +405,7 @@ body {
 
     .about-img {
         height: 200px;
-    } 
+    }
 
     .projects-card {
         height: 225px;
@@ -413,7 +414,8 @@ body {
 }
 
 /* Smartphones under 400px wide */
-@media (width <= 400px) {
+@media (width <=400px) {
+
     .about-card,
     .projects-card {
         width: 100%;
@@ -421,7 +423,7 @@ body {
 }
 
 /* Smartphones between 400px and 450px wide */
-@media (400px < width <= 450px) {    
+@media (400px < width <=450px) {
     .h2-title {
         font-size: 3rem;
     }
@@ -454,7 +456,7 @@ body {
 }
 
 /* Smartphones between 450px and 500px wide */
-@media (450px < width <= 500px) {
+@media (450px < width <=500px) {
     .h2-title {
         font-size: 3.2rem;
     }
@@ -483,7 +485,7 @@ body {
 }
 
 /* Small tablets between 500px and 600px wide */
-@media (500px < width <= 600px) {
+@media (500px < width <=600px) {
     .h1-home {
         font-size: 4.7rem;
         margin-bottom: 30px;
@@ -508,7 +510,7 @@ body {
 }
 
 /* Seting up the about and project cards to devices between 500px and 750px wide */
-@media (550px < width <= 700px) {
+@media (550px < width <=700px) {
     .about-card {
         width: 420px;
     }
@@ -524,7 +526,7 @@ body {
 }
 
 /* Changing the footer to devices under 600px wide */
-@media (width <= 600px) {
+@media (width <=600px) {
     #footer {
         font-size: 15px;
         display: block;
@@ -541,7 +543,7 @@ body {
 }
 
 /* Litlle changes in the home text*/
-@media (600px < width <= 650px) {
+@media (600px < width <=650px) {
     .home-text-container {
         margin-top: 15%;
     }
@@ -558,7 +560,7 @@ body {
 }
 
 /* Here it makes an image appear on tablets displays*/
-@media (600px < width <= 850px) and (orientation: portrait) { 
+@media (600px < width <=850px) and (orientation: portrait) {
     #home {
         background-image: none;
         height: 100%;
@@ -590,21 +592,21 @@ body {
 }
 
 /* In small laptops, the home background image won't appear */
-@media (600px < width <= 850px) and (orientation: landscape) {
+@media (600px < width <=850px) and (orientation: landscape) {
     #home {
         background-image: none;
     }
 }
 
 /* Navigation list disappear */
-@media (width <= 650px) {
+@media (width <=650px) {
     .nav-list {
         display: none;
     }
 }
 
 /* Ajusting the size of the home text */
-@media (650px < width <= 700px) {
+@media (650px < width <=700px) {
     .h1-home {
         font-size: 4.3rem;
         margin-bottom: 30px;
@@ -616,21 +618,21 @@ body {
 }
 
 /* Changing the gap of the list, as i do below*/
-@media (650px < width <= 760px) {
+@media (650px < width <=760px) {
     .nav-list {
         gap: 30px;
     }
 }
 
 /* Gap of the nav list */
-@media (760px < width <= 800px) {
+@media (760px < width <=800px) {
     .nav-list {
         gap: 60px;
     }
 }
 
 /* Here i make some big changes to devices under 700px wide */
-@media (width <= 700px) {      
+@media (width <=700px) {
     #home {
         background-image: none;
         min-height: 700px;
@@ -639,7 +641,7 @@ body {
     #home::before {
         bottom: -150px;
     }
-    
+
     .home-text-grid {
         align-items: start;
         grid-template-columns: 100%;
@@ -656,7 +658,7 @@ body {
 }
 
 /* Changing the about section padding and the cards size */
-@media (700px < width <= 750px) {
+@media (700px < width <=750px) {
     #about {
         padding: 80px 5%;
     }
@@ -680,7 +682,7 @@ body {
 }
 
 /* Changing some text size */
-@media (700px < width <= 850px) {
+@media (700px < width <=850px) {
     .h1-home {
         font-size: 4.7rem;
     }
@@ -691,7 +693,7 @@ body {
 }
 
 /* Making the about section responsible from 750px till 850px */
-@media (750px < width <= 850px) {
+@media (750px < width <=850px) {
     #about {
         padding: 80px 5%;
     }
@@ -746,7 +748,7 @@ body {
 }
 
 /* Laptops between 935px and 1100px wide */
-@media (935px < width <= 1100px) {
+@media (935px < width <=1100px) {
     .h1-home {
         font-size: 3.7rem;
     }
@@ -770,13 +772,13 @@ body {
 }
 
 /* From here to below, i'm gonna change the components and texts sizes to big screens */
-@media (1000px < width <= 1100px) {
+@media (1000px < width <=1100px) {
     .h1-home {
         font-size: 4.1rem;
     }
 }
 
-@media (1200px <= width) {   
+@media (1200px <=width) {
     #about {
         padding: 80px 15%;
     }
@@ -786,7 +788,7 @@ body {
     }
 }
 
-@media (1300px <= width) {    
+@media (1300px <=width) {
     .h2-title {
         font-size: 4rem;
     }
@@ -821,11 +823,11 @@ body {
     }
 }
 
-@media (1400px <= width) {
+@media (1400px <=width) {
     :root {
         --Navbar-height: 60px;
     }
-    
+
     .h2-title {
         font-size: 4.3rem;
     }
@@ -851,7 +853,7 @@ body {
     }
 }
 
-@media (1500px <= width) {       
+@media (1500px <=width) {
     .h2-title {
         font-size: 4.5rem;
     }
@@ -891,7 +893,7 @@ body {
     }
 }
 
-@media (1600px <= width) {
+@media (1600px <=width) {
     .h2-title {
         font-size: 4.6rem;
     }
@@ -922,7 +924,7 @@ body {
     }
 }
 
-@media (1800px <= width) {
+@media (1800px <=width) {
     .h2-title {
         font-size: 4.6rem;
     }
@@ -936,7 +938,7 @@ body {
     }
 
     .h1-home {
-        font-size: 5.5vw;
+        font-size: 5.2vw;
     }
 
     .p-home {
@@ -950,7 +952,6 @@ body {
     .about-img {
         height: 285px;
     }
-
 
     .projects-card {
         height: 275px;
