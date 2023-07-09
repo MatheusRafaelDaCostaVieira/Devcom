@@ -55,7 +55,7 @@ body {
 
 .h1-home>span,
 .h2-title>span {
-    color: red;
+    color: rgb(var(--Yellow));
 }
 
 .h3-title {
